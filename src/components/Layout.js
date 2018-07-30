@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 
+import 'normalize.css';
 import '../css/typography.css';
 
-export default class Template extends React.Component {
+class Template extends React.Component {
   static propTypes = {
-    children: PropTypes.func,
+    children: PropTypes.element,
   };
 
   render() {
@@ -64,3 +65,5 @@ export default class Template extends React.Component {
     );
   }
 }
+
+export default Template;
