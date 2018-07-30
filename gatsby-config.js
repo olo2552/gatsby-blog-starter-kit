@@ -14,21 +14,17 @@ module.exports = {
         path: `${__dirname}/blog`,
         name: 'blog',
       },
-    },
-    {
+    }, {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: [
-          {
+        plugins: [{
             resolve: 'gatsby-remark-images',
-            options: {
-              linkImagesToOriginal: false
-            }
-          }
-        ]
-      }
+            options: { linkImagesToOriginal: false },
+        }],
+      },
     },
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sharp'
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-styled-components',
   ],
-}
+};
